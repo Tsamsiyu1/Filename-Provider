@@ -8,10 +8,9 @@
         "overview": "Manage Your FanCuts and own shows and movies in Jellyfin",
         "versions": [
             {
-                "checksum": "ad6db5175f4732308b5dd166f79a1c2d",
                 "changelog": "bug fixes and improvements",
                 "targetAbi": "10.6.0.0",
-                "sourceUrl": "https://repo.jellyfin.org/releases/other/whats-this-plugin.zip.gif",
+                "sourceUrl": "https://github.com/Tsamsiyu1/Filename-Provider/releases/download/v1.0.0/plugin.zip",
                 "timestamp": "2020-03-27 06:02:58",
                 "version": "1.0.0.0"
             }
