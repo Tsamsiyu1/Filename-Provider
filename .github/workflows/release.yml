@@ -1,0 +1,35 @@
+name: Build and Release Jellyfin Plugin
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "9.0.x"
+
+      - name: Build plugin
+        run: dotnet publish -c Release -o build
+
+      - name: Zip plugin
+        run: |
+          cd build
+          zip -r ../plugin.zip .
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: plugin.zip
