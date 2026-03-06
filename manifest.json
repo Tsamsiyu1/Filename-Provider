@@ -1,0 +1,20 @@
+[
+    {
+        "category": "Metadata",
+        "guid": "0a35f534-abfa-4b67-bdd1-213d8dc7a0d0",
+        "name": "Filename Provider",
+        "description": "Provides metadata for movies and TV shows based on their filename. ONLY LOCAL, no remote lookups are performed. This is useful for files that won't be matched by other providers and you want to at least have the filename as metadata.",
+        "owner": "Marcel",
+        "overview": "Manage Your FanCuts and own shows and movies in Jellyfin",
+        "versions": [
+            {
+                "checksum": "ad6db5175f4732308b5dd166f79a1c2d",
+                "changelog": "bug fixes and improvements",
+                "targetAbi": "10.6.0.0",
+                "sourceUrl": "https://repo.jellyfin.org/releases/other/whats-this-plugin.zip.gif",
+                "timestamp": "2020-03-27 06:02:58",
+                "version": "1.0.0.0"
+            }
+        ]
+    }
+]
